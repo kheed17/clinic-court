@@ -1,4 +1,4 @@
-/* Base Theme Variables */
+/* Theme Variables */
 :root {
   --bg: #f9fafb;
   --text: #1f2937;
@@ -17,7 +17,7 @@
   --quote: #9ca3af;
 }
 
-/* Reset and base styles */
+/* Base Styles */
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -26,7 +26,7 @@ body {
   padding: 0;
 }
 
-/* Navigation styles */
+/* Navigation */
 nav {
   background-color: var(--nav-bg);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -101,7 +101,7 @@ nav {
   outline: none;
 }
 
-/* Responsive nav */
+/* Responsive Navigation */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -168,4 +168,25 @@ main {
 /* About Section */
 .about-section {
   background-color: #f3f4f6;
-  padding
+  padding: 2rem;
+}
+
+.about-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* Footer */
+footer {
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
+  text-align: center;
+  padding: 2rem;
+}
