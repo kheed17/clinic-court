@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,30 +11,40 @@
 <body>
   <nav>
     <div class="nav-container">
-      <div class="logo-title">
-        <img src="logo.png" alt="Clinic & Court Logo" class="logo" />
-        <h1 class="site-title">Clinic & Court</h1>
-      </div>
+      <h1 class="site-title">Clinic & Court</h1>
       <ul class="nav-links">
-        <li><a href="#medical-insights">Medical</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#court">Court</a></li>
-        <li><a href="#athletics">Athletics</a></li>
+        <li><a href="#medical">Medical Insights</a></li>
+        <li><a href="#emotions">Emotional Reflections</a></li>
+        <li><a href="#culture">Swahili Culture</a></li>
         <li><a href="#about">About</a></li>
       </ul>
-      <div class="nav-actions">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <button class="dark-toggle" onclick="toggleTheme()">🌓</button>
-      </div>
+      <button class="dark-toggle" onclick="toggleTheme()">🌓</button>
     </div>
   </nav>
 
   <header class="hero">
-    <h1 class="hero-title">Clinic & Court</h1>
-    <p class="hero-subtitle">Bridging Medicine, Music, and Movement</p>
-    <p class="hero-quote">“Mwili huimba, nafsi huponya.”</p>
+    <div class="hero-content">
+      <h2 class="hero-title">Clinic & Court</h2>
+      <p class="hero-tagline">Where Medicine Meets the Hardwood</p>
+      <p class="hero-subtitle">
+        Exploring athlete health, emotional journeys, and cultural connections through the lens of basketball and Swahili heritage.
+      </p>
+      <div class="hero-buttons">
+        <a href="#posts" class="btn primary">Read Latest Posts</a>
+        <a href="#subscribe" class="btn secondary">Subscribe</a>
+      </div>
+    </div>
   </header>
 
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", current === "light" ? "dark" : "light");
+    }
+  </script>
+</body>
+  
   <main>
     <section id="medical-insights" class="section">
       <h2 class="section-title">🧠 Medical Spotlight</h2>
