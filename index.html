@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clinic & Court | Where Music Meets Medicine</title>
   <link rel="stylesheet" href="style.css">
   <style>
@@ -16,61 +14,58 @@
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-<nav class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <div class="flex items-center space-x-3">
-      <img src="logo.png" alt="Clinic & Court Logo" class="h-14 w-14 rounded-full" />
-      <h1 class="text-xl font-bold title-font text-indigo-700">Clinic & Court</h1>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo-title">
+        <img src="logo.png" alt="Clinic & Court Logo" class="logo" />
+        <h1 class="site-title">Clinic & Court</h1>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
-    <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
-  ☰
-    </button>
+  </nav>
 
+  <ul class="nav-links">
+   <li><a href="#medical-insights">Medical</a></li>
+   <li><a href="#music">Music</a></li>
+   <li><a href="#court">Court</a></li>
+   <li><a href="#athletics">Athletics</a></li>
+   <li><a href="#about">About</a></li>
+  </ul>
+ <header class="hero">
+  <h1 class="hero-title">Clinic & Court</h1>
+  <p class="hero-subtitle">Bridging Medicine, Music, and Movement</p>
+  <p class="hero-quote">“Mwili huimba, nafsi huponya.”</p>
+</header>
 
-    <ul class="flex space-x-6">
-      <li><a href="#medical insights" class="text-gray-700 hover:text-indigo-600">Medical</a></li>
-      <li><a href="#music" class="text-gray-700 hover:text-green-600">Music</a></li>
-      <li><a href="#court" class="text-gray-700 hover:text-purple-600">Court</a></li>
-      <li><a href="#athletics" class="text-gray-700 hover:text-purple-600">Athletics</a></li>
-      <li><a href="#about" class="text-gray-700 hover:text-purple-600">About</a></li>
-    </ul>
-  </div>
-</nav>
-  <header class="hero-gradient p-10 text-black text-center">
-    <h1 class="text-4xl font-bold">Clinic & Court</h1>
-    <p class="mt-2 text-lg">Bridging Medicine, Music, and Movement</p>
-    <p class="text-sm italic text-black-300 mt-2">“Mwili huimba, nafsi huponya.”</p>
-  </header>
+<main>
+  <section id="medical" class="section">
+    <h2 class="section-title">🧠 Medical Spotlight</h2>
+    <p class="section-text">Explore physiology and clinical insights tailored for athletes.</p>
+  </section>
+ 
+ <section id="music" class="section">
+   <h2 class="section-title">🎶 Therapeutic Rhythms</h2>
+   <p class="section-text">Unpack music's neurophysiological impact and healing power.</p>
+  </section>
 
-  <main class="p-8">
-    <section id="medical" class="mb-8">
-      <h2 class="text-2xl font-semibold">🧠 Medical Spotlight</h2>
-      <p class="mt-2">Explore physiology and clinical insights tailored for athletes.</p>
-    </section>
+ <section id="athletics" class="section">
+   <h2 class="section-title">🏃‍♂️ Peak Performance & Precision</h2>
+   <p class="section-text">Dive into the science of movement, and strategy where physiology meets hustle.</p>
+ </section>
 
-    <section id="music" class="mb-8">
-      <h2 class="text-2xl font-semibold">🎶 Therapeutic Rhythms</h2>
-      <p class="mt-2">Unpack music's neurophysiological impact and healing power.</p>
-    </section>
-
-    <section id="athletics" class="mb-8">
-      <h2 class="text-2xl font-semibold">🏃‍♂️ Peak Performance & Precision</h2>
-      <p class="mt-2">Dive into the science of movement, and strategy where physiology meets hustle.</p>
-    </section>
-
-    <section id="court" class="mb-8">
-      <h2 class="text-2xl font-semibold">🏀 Court Analysis</h2>
-      <p class="mt-2">From tendon loading to court-side mental prep—break it down like a baller.</p>
-    </section>
+ <section id="court" class="section">
+   <h2 class="section-title">🏀 Court Analysis</h2>
+   <p class="section-text">From tendon loading to court-side mental prep—break it down like a baller.</p>
+ </section>
        
-    <section id="about" class="p-8 bg-gray-100">
-  <h2 class="text-2xl font-semibold mb-2">📖 About Clinic & Court</h2>
-  <p class="text-md leading-relaxed">
-    Welcome to <strong>Clinic & Court</strong>, a space where medicine meets motion, and rhythm flows through recovery. 
-    Founded by a med student with a passion for neurophysiology, lyrical storytelling, and athletic performance, this blog blends 
-    clinical insight with cultural energy. From analyzing tendon loading to exploring music’s healing power, every post aims to 
-    educate, inspire, and connect minds that move. Karibu sana—this is a journey of systems, soul, and the court beneath your feet.
+<section id="about" class="about-section">
+  <h2 class="about-title">📖 About Clinic & Court</h2>
+  <p class="about-text">
+    Welcome to <strong>Clinic & Court</strong>, a space where medicine meets motion, and rhythm flows through recovery.
+    Founded by a med student with a passion for neurophysiology, lyrical storytelling, and athletic performance, this blog blends
+    clinical insight with cultural energy. From analyzing tendon loading to exploring music’s healing power, every post aims to
+    educate, inspire, and connect minds that move. <em>Karibu sana</em>—this is a journey of systems, soul, and the court beneath your feet.
   </p>
-</section>    
+</section> 
 </html>
