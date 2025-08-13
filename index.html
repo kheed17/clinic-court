@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <title>Clinic & Court | Where Music Meets Medicine</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic & Court</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleDarkMode() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", currentTheme === "light" ? "dark" : "light");
     }
-  </style>
+
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("show");
+    }
+  </script>
 </head>
 <body>
   <nav>
@@ -21,51 +25,60 @@
         <img src="logo.png" alt="Clinic & Court Logo" class="logo" />
         <h1 class="site-title">Clinic & Court</h1>
       </div>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="#medical-insights">Medical</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#court">Court</a></li>
+        <li><a href="#athletics">Athletics</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+      </div>
     </div>
   </nav>
 
-  <ul class="nav-links">
-   <li><a href="#medical-insights">Medical</a></li>
-   <li><a href="#music">Music</a></li>
-   <li><a href="#court">Court</a></li>
-   <li><a href="#athletics">Athletics</a></li>
-   <li><a href="#about">About</a></li>
-  </ul>
- <header class="hero">
-  <h1 class="hero-title">Clinic & Court</h1>
-  <p class="hero-subtitle">Bridging Medicine, Music, and Movement</p>
-  <p class="hero-quote">“Mwili huimba, nafsi huponya.”</p>
-</header>
+  <header class="hero">
+    <h1 class="hero-title">Clinic & Court</h1>
+    <p class="hero-subtitle">Bridging Medicine, Music, and Movement</p>
+    <p class="hero-quote">“Mwili huimba, nafsi huponya.”</p>
+  </header>
 
-<main>
-  <section id="medical" class="section">
-    <h2 class="section-title">🧠 Medical Spotlight</h2>
-    <p class="section-text">Explore physiology and clinical insights tailored for athletes.</p>
-  </section>
- 
- <section id="music" class="section">
-   <h2 class="section-title">🎶 Therapeutic Rhythms</h2>
-   <p class="section-text">Unpack music's neurophysiological impact and healing power.</p>
-  </section>
+  <main>
+    <section id="medical-insights" class="section">
+      <h2 class="section-title">🧠 Medical Spotlight</h2>
+      <p class="section-text">Explore physiology and clinical insights tailored for athletes.</p>
+    </section>
 
- <section id="athletics" class="section">
-   <h2 class="section-title">🏃‍♂️ Peak Performance & Precision</h2>
-   <p class="section-text">Dive into the science of movement, and strategy where physiology meets hustle.</p>
- </section>
+    <section id="music" class="section">
+      <h2 class="section-title">🎶 Therapeutic Rhythms</h2>
+      <p class="section-text">Unpack music's neurophysiological impact and healing power.</p>
+    </section>
 
- <section id="court" class="section">
-   <h2 class="section-title">🏀 Court Analysis</h2>
-   <p class="section-text">From tendon loading to court-side mental prep—break it down like a baller.</p>
- </section>
-       
-<section id="about" class="about-section">
-  <h2 class="about-title">📖 About Clinic & Court</h2>
-  <p class="about-text">
-    Welcome to <strong>Clinic & Court</strong>, a space where medicine meets motion, and rhythm flows through recovery.
-    Founded by a med student with a passion for neurophysiology, lyrical storytelling, and athletic performance, this blog blends
-    clinical insight with cultural energy. From analyzing tendon loading to exploring music’s healing power, every post aims to
-    educate, inspire, and connect minds that move. <em>Karibu sana</em>—this is a journey of systems, soul, and the court beneath your feet.
-  </p>
-</section> 
+    <section id="athletics" class="section">
+      <h2 class="section-title">🏃‍♂️ Peak Performance & Precision</h2>
+      <p class="section-text">Dive into the science of movement, and strategy where physiology meets hustle.</p>
+    </section>
+
+    <section id="court" class="section">
+      <h2 class="section-title">🏀 Court Analysis</h2>
+      <p class="section-text">From tendon loading to court-side mental prep—break it down like a baller.</p>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2 class="about-title">📖 About Clinic & Court</h2>
+      <p class="about-text">
+        Welcome to <strong>Clinic & Court</strong>, a space where medicine meets motion, and rhythm flows through recovery.
+        Founded by a med student with a passion for neurophysiology, lyrical storytelling, and athletic performance, this blog blends
+        clinical insight with cultural energy. From analyzing tendon loading to exploring music’s healing power, every post aims to
+        educate, inspire, and connect minds that move. <em>Karibu sana</em>—this is a journey of systems, soul, and the court beneath your feet.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clinic & Court</p>
+  </footer>
+</body>
 </html>
