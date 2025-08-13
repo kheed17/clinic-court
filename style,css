@@ -1,0 +1,86 @@
+/* style.css */
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb; /* Tailwind's gray-50 */
+  color: #1f2937; /* Tailwind's gray-900 */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+nav h1 {
+  color: #4f46e5; /* Indigo-700 */
+}
+
+nav a {
+  color: #374151; /* Gray-700 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4f46e5; /* Indigo hover */
+}
+
+/* Hero Section */
+.hero-gradient {
+  background: linear-gradient(to right, #6B21A8, #059669);
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
+
+.hero-gradient h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-gradient p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* About Section */
+#about {
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 2rem;
+}
+
+#about p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Utility Classes */
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
