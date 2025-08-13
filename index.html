@@ -5,18 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clinic & Court</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function toggleDarkMode() {
-      const html = document.documentElement;
-      const currentTheme = html.getAttribute("data-theme");
-      html.setAttribute("data-theme", currentTheme === "light" ? "dark" : "light");
-    }
-
-    function toggleMenu() {
-      const navLinks = document.querySelector(".nav-links");
-      navLinks.classList.toggle("show");
-    }
-  </script>
 </head>
 <body>
   <nav>
@@ -34,7 +22,7 @@
       </ul>
       <div class="nav-actions">
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+        <button class="dark-toggle" onclick="toggleTheme()">🌓</button>
       </div>
     </div>
   </nav>
@@ -80,5 +68,20 @@
   <footer>
     <p>&copy; 2025 Clinic & Court</p>
   </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
+    }
+
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks) {
+        navLinks.classList.toggle('show');
+      }
+    }
+  </script>
 </body>
 </html>
