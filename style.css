@@ -43,11 +43,13 @@ nav {
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap; /* allows wrapping */
+  gap: 1rem;
+  list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: center; /* centers links */
 }
 
 .nav-links a {
@@ -60,12 +62,32 @@ nav {
   color: var(--accent);
 }
 
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
 .dark-toggle {
   background: none;
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
   color: var(--nav-text);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
 
 /* Hero Section */
