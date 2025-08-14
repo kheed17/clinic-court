@@ -318,6 +318,18 @@ footer {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.blog-post a::after {
+  content: ' →';
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.blog-post a:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* Category Labels */
 .category {
   font-size: 0.75rem;
