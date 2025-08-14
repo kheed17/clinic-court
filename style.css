@@ -463,3 +463,67 @@ footer {
   background-color: var(--accent);
   color: var(--bg);
 }
+
+.emotional-reflections {
+  padding: 3rem 1.5rem;
+  background-color: var(--bg);
+  color: var(--text);
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+}
+
+.emotional-reflections h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--muted);
+}
+
+.quotes blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.quotes span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.therapeutic-rhythms h3 {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.therapeutic-rhythms p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+:root {
+  --bg: #fdfdfd;
+  --text: #222;
+  --accent: #6a4c93;
+  --muted: #666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #eee;
+    --accent: #c792ea;
+    --muted: #aaa;
+  }
+}
