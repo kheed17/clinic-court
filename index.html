@@ -35,7 +35,7 @@
       </p>
       <div class="hero-buttons">
         <a href="#posts" class="btn primary">Read Latest Posts</a>
-        <a href="#subscribe" class="btn secondary">Subscribe</a>
+         <a href="#subscribe" class="btn secondary">Subscribe</a>
       </div>
     </div>
   </header>
@@ -46,6 +46,12 @@
       const current = html.getAttribute("data-theme");
       html.setAttribute("data-theme", current === "light" ? "dark" : "light");
     }
+     function toggleMenu() {
+    const navLinks = document.querySelector(".nav-links");
+    if (navLinks) {
+      navLinks.classList.toggle("show");
+    }
+  }
   </script>
 </body>
   
