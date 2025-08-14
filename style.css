@@ -43,7 +43,7 @@ nav {
 }
 
 .menu-toggle {
-  background: none;
+  background: blue;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
