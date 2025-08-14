@@ -782,14 +782,40 @@ footer {
   transform: scale(1.05);
 }
 
-.newsletter-form {
+.newsletter-split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   margin-top: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.newsletter-text {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.newsletter-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.newsletter-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.newsletter-form {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .newsletter-form label {
@@ -820,4 +846,17 @@ footer {
 .newsletter-form button:hover {
   background-color: var(--text);
   color: var(--bg);
+}
+
+.success-message {
+  display: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--accent);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
