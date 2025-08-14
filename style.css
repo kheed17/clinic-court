@@ -344,6 +344,16 @@ footer {
   color: var(--accent);
 }
 
+.sidebar button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* Hero Section */
 .hero-section {
   flex: 1;
@@ -369,12 +379,23 @@ footer {
   line-height: 1.6;
 }
 
+.btn.primary {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: var(--btn-text);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
   }
-
+  
   .sidebar {
     width: 100%;
     box-shadow: none;
