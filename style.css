@@ -355,3 +355,54 @@ footer {
   background-color: #ede7f6;
   color: #512da8;
 }
+
+.insights-section {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.insights-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.insights-section .intro {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--quote);
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.topic-card {
+  background-color: var(--nav-bg);
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.topic-card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.topic-card .date {
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.view-all-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
