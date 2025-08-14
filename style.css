@@ -266,3 +266,70 @@ footer {
   text-align: center;
   padding: 2rem;
 }
+
+.blog-section {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.blog-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.blog-post {
+  background-color: var(--nav-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.blog-post h4 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.blog-post .date {
+  font-size: 0.85rem;
+  color: var(--quote);
+  margin-bottom: 1rem;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Category Labels */
+.category {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.category.medical {
+  background-color: #e0f2f1;
+  color: #00796b;
+}
+
+.category.emotional {
+  background-color: #fce4ec;
+  color: #c2185b;
+}
+
+.category.culture {
+  background-color: #ede7f6;
+  color: #512da8;
+}
