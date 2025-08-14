@@ -22,6 +22,8 @@
 
 body {
   margin: 0;
+  padding: 0;
+  box-sizing; border-box;
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
   color: var(--text);
@@ -865,6 +867,7 @@ footer {
 }
 
 .footer {
+  width: 100%
   background-color: #111;
   color: #eee;
   padding: 40px 20px;
@@ -873,9 +876,11 @@ footer {
 
 .footer-columns {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 30px;
-  margin-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding: 0 1rem;
 }
 
 .column h4 {
