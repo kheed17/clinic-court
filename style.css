@@ -306,6 +306,16 @@ footer {
   text-decoration: none;
   color: var(--accent);
   font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.blog-post a:hover {
+  color: var(--text);
+  background-color: var(--accent);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Category Labels */
