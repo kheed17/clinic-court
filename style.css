@@ -990,3 +990,28 @@ footer {
 .analysis-card li {
   margin-bottom: 0.5rem;
 }
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: var(--text);
+  color: var(--bg);
+}
