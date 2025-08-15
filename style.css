@@ -30,7 +30,7 @@ body {
 }
 
 /* Navigation */
-.main-nav {
+/*.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +38,7 @@ body {
   background-color: #fff;
   color: #111;
   flex-wrap: wrap;
-}
+}*/
 
 .main-nav {
   position: sticky;
@@ -52,6 +52,13 @@ body {
   color: #fff;
   flex-wrap: wrap;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align items: center;
 }
 
 .nav-logo {
@@ -77,6 +84,66 @@ body {
 }
 
 .nav-links li a:hover {
+  color: var(--accent);
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex: 2;
+  justify-content: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--accent);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #eee;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
   color: var(--accent);
 }
 
