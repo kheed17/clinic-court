@@ -867,6 +867,7 @@ footer {
 }
 
 .footer {
+  width: 100%;
   background-color: #111;
   color: #eee;
   padding: 40px 20px;
