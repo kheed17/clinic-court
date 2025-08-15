@@ -40,6 +40,20 @@ body {
   flex-wrap: wrap;
 }
 
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #fff;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 .nav-logo {
   font-size: 1.5rem;
   font-weight: bold;
