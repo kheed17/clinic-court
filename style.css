@@ -869,7 +869,7 @@ footer {
 .footer {
   background-color: #111;
   color: #eee;
-  padding: 0;
+  padding: 40px 20px;
   font-family: 'Inter', sans-serif;
 }
 
