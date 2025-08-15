@@ -920,7 +920,7 @@ footer {
 
 .court-analysis {
   padding: 3rem 1.5rem;
-  background-color: var(--bg);
+  background-color: #f0f3fc; /* soft grey */
   color: var(--text);
   max-width: 1000px;
   margin: auto;
