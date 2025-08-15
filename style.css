@@ -946,8 +946,10 @@ footer {
 }
 
 .court-diagram img {
-  max-width: 100%;
+  max-width: 600px; /* or 500px for tighter fit */
+  width: 100%;
   height: auto;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
