@@ -867,7 +867,6 @@ footer {
 }
 
 .footer {
-  width: 100vw;
   background-color: #111;
   color: #eee;
   padding: 40px 20px;
@@ -912,7 +911,6 @@ footer {
 }
 
 .footer-bottom {
-  width: 100vw;
   text-align: center;
   font-size: 0.85rem;
   color: #888;
